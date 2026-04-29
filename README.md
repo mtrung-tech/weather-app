@@ -35,19 +35,24 @@ A modern, responsive weather application built with React and Tailwind CSS. Get 
    ```
 
 3. **Set up environment variables**
-   - Run the setup script: `node setup-env.js` (creates .env file automatically)
+   - Run the setup script: `npm run setup:env` (creates .env file automatically)
    - Get your free API key from [OpenWeatherMap](https://openweathermap.org/api)
    - Edit the `.env` file and replace `your_api_key_here` with your actual API key:
      ```
-     VITE_OPENWEATHER_API_KEY=your_actual_api_key_here
+     OPENWEATHER_API_KEY=your_actual_api_key_here
      ```
 
-4. **Start the development server**
+4. **Start the backend server**
+   ```bash
+   npm run dev:server
+   ```
+
+5. **Start the frontend development server**
    ```bash
    npm run dev
    ```
 
-5. **Open your browser**
+6. **Open your browser**
    Navigate to `http://localhost:5173` to see the app in action!
 
 ## 🛠️ Tech Stack
@@ -78,7 +83,11 @@ A modern, responsive weather application built with React and Tailwind CSS. Get 
 
 ## 🔧 Available Scripts
 
-- `npm run dev` - Start development server
+- `npm run dev` - Start frontend development server
+- `npm run dev:server` - Start backend development server
+- `npm run server` - Start backend server
+- `npm run setup:env` - Create a starter `.env` file
+- `npm test` - Run backend tests
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
